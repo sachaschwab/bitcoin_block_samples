@@ -1,0 +1,62 @@
+
+"hash": "string",
+"ver": "integer",
+"prev_block": "string",
+"mrkl_root": "string",
+"time": "integer",
+"bits": "integer",
+"next_block": ["string"],
+"fee": "integer",
+"nonce": "integer",
+"n_tx": "integer",
+"size": "integer",
+"block_index": "integer",
+"main_chain": "boolean",
+"height": "integer",
+"weight": "integer",
+"tx": [
+  {
+    "hash": "string",
+    "ver": "integer",
+    "vin_sz": "integer",
+    "vout_sz": "integer",
+    "size": "integer",
+    "weight": "integer",
+    "fee": "integer",
+    "relayed_by": "string",
+    "lock_time": "integer",
+    "tx_index": "integer",
+    "double_spend": "boolean",
+    "time": "integer",
+    "block_index": "integer",
+    "block_height": "integer",
+    "inputs": [
+      {
+        "sequence": "integer",
+        "witness": "string",
+        "script": "string",
+        "index": "integer",
+        "prev_out": {
+          "type": "integer",
+          "spent": "boolean",
+          "value": "integer",
+          "tx_index": "integer",
+          "n": "integer",
+          "script": "string"
+        }
+      }
+    ],
+    "out": [
+      {
+        "type": "integer",
+        "spent": "boolean",
+        "value": "integer",
+        "tx_index": "integer",
+        "n": "integer",
+        "script": "string",
+        "addr": "string"
+      }
+    ]
+  }
+]
+}
